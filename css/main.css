@@ -44,4 +44,40 @@ button {
 .img {
   width: 400px;
 }
+
+#validation-input {
+  border: 2px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+.login-form {
+  max-width: 320px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 16px;
+}
+
+.login-form input,
+.login-form button {
+  width: 100%;
+  padding: 4px;
+  font: inherit;
+}
 /*# sourceMappingURL=main.css.map */
