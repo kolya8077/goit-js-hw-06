@@ -4,7 +4,10 @@ const refs = {
 
 refs.input.addEventListener('blur', () => {
   if (refs.input.value.length == refs.input.dataset.length) {
-    return refs.input.classList.add("valid");
-  };
-    return refs.input.classList.add("invalid");
+    refs.input.classList.add("valid");
+    refs.input.classList.remove('invalid')
+  } else {
+    refs.input.classList.add("valid");
+    refs.input.classList.add("invalid");
+  }
 });
