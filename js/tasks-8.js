@@ -1,34 +1,26 @@
 const refs = {
-    form: document.querySelector('form.login-form')
+  form: document.querySelector("form.login-form"),
 };
 
-
-refs.form.addEventListener('submit', onFormSumbit);
+refs.form.addEventListener("submit", onFormSumbit);
 
 function onFormSumbit(event) {
-    event.preventDefault();
-    
-    
-    const formElem = event.currentTarget.elements;
-    
-    const email = formElem.email.value;
-    const password = formElem.password.value;
-    
-    if (email == '') {
-    alert('Поле "Email" не заповнено');
-    return false
-    };
+  event.preventDefault();
 
-    if (password == '') {
+  const formElem = event.currentTarget.elements;
+
+  const email = formElem.email.value;
+  const password = formElem.password.value;
+
+  if (password === "") {
     alert('Поле "Password" не заповнено');
-    return false
-    };
+    return false;
+  }
 
-    const formData = {
-        email,
-        password,
-    }
-    event.currentTarget.reset();
-    console.log(formData);
-
-};
+  const formData = {
+    email,
+    password,
+  };
+  event.currentTarget.reset();
+  console.log(formData);
+}
