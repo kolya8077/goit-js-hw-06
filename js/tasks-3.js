@@ -18,7 +18,7 @@ const galleryEl = document.querySelector('.gallery');
 const itemEl = images.map((option) => {
   const itemEl = document.createElement('li');
   const imgEl = document.createElement('img');
-  imgEl.classList = 'img'
+  imgEl.classList = 'img';
   imgEl.src = option.url;
   imgEl.alt = option.alt;
   itemEl.append(imgEl);

@@ -4,7 +4,7 @@ const refs = {
 };
 
 
-refs.input.addEventListener('pointerout', () => {
+refs.input.addEventListener('input', () => {
     refs.text.style.fontSize = refs.input.value + 'px';
 });
 
