@@ -3,7 +3,7 @@ const refs = {
 };
 
 refs.input.addEventListener("blur", () => {
-  if (refs.input.value.length == refs.input.dataset.length) {
+  if (refs.input.value.length === Number(refs.input.dataset.length)) {
     refs.input.classList.add("valid");
     refs.input.classList.remove("invalid");
   } else {

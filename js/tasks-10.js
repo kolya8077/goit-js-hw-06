@@ -11,9 +11,9 @@ refs.destroyBtn.addEventListener("click", destroyBoxes);
 let size = 20;
 
 function createBoxes(elem) {
-  const min = +refs.input.getAttribute("min");
-  const max = +refs.input.getAttribute("max");
-  const value = +refs.input.value;
+  const max = Number(refs.input.getAttribute("max"));
+  const min = Number(refs.input.getAttribute("min"));
+  const value = Number(refs.input.value);
   const arr = [];
 
   if (min <= value && value <= max) {
