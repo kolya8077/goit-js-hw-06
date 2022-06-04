@@ -12,7 +12,7 @@ function onFormSumbit(event) {
   const email = formElem.email.value;
   const password = formElem.password.value;
 
-  if (password === "") {
+  if (password === "" || email === "") {
     alert('Поле "Password" не заповнено');
     return false;
   }
